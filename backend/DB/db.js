@@ -11,11 +11,19 @@ dotenv.config();
 //     database: process.env.DB_DATABASE
 // }
 
+// const dbSettings = {
+//     connectionLimit : 10,
+//     user : "root",
+//     password : "Meelan@37562" ,
+//     host : "localhost",
+//     database : "examdb"
+// }
+
 const dbSettings = {
     connectionLimit : 10,
-    user : "root",
-    password : "Meelan@37562" ,
-    host : "localhost",
+    user : "admin",
+    password : "NJADMINpass" ,
+    host : "examdb.cnvxsdjybrlr.us-east-2.rds.amazonaws.com",
     database : "examdb"
 }
 var pool  = mysql.createPool(dbSettings);
