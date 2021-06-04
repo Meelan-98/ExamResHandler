@@ -35,6 +35,6 @@ app.use('/api',apiController);
 app.use('/auth',authController);
 
 console.log("Backend Started Listening!!")
-app.listen(process.env.port || 5000);
+app.listen(process.env.PORT || 5000);
 
 
